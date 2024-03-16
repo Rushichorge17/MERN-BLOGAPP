@@ -6,7 +6,7 @@ import SignIn from './pages/SignIn';
 import Projects from './pages/Projects';
 import SignUp from './pages/SignUp';
  import Header from './components/Header';
-// import Footer from './components/Footer';
+ import Footer from './components/Footer';
 // import PrivateRoute from './components/PrivateRoute';
 // import OnlyAdminPrivateRoute from './components/OnlyAdminPrivateRoute';
 // import CreatePost from './pages/CreatePost';
@@ -14,10 +14,12 @@ import SignUp from './pages/SignUp';
 import PostPage from './pages/PostPage';
 // import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
-
+import TermsAndConditions from './pages/Terms & Conditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import FAQs from './pages/FAQs';
 export default function App() {
   return (
-    <BrowserRouter>
+   <BrowserRouter>
       {/* <ScrollToTop /> */}
       <Header />
       <Routes>
@@ -29,15 +31,19 @@ export default function App() {
         {/* <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route> */}
-        {/* <Route element={<OnlyAdminPrivateRoute />}>
+        {/* <Route el ement={<OnlyAdminPrivateRoute />}>
           <Route path='/create-post' element={<CreatePost />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route> */}
 
         <Route path='/projects' element={<Projects />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
+
+        <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        <Route path="/faqs" element={<FAQs />} /> 
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
