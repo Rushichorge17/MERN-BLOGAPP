@@ -7,7 +7,6 @@ import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
 
-  //  apiKey: "AIzaSyBpoRcBEg6Xf_QBPNqJ5GHFU_4q2FdRdM8",
    apiKey : import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "journeyjot-d0395.firebaseapp.com",
   projectId: "journeyjot-d0395",
