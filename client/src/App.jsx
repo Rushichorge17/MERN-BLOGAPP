@@ -17,6 +17,8 @@ import Search from './pages/Search';
 import TermsAndConditions from './pages/Terms & Conditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import FAQs from './pages/FAQs';
+import Dashboard from './pages/Dashboard';
+import PrivateRoute from './components/PrivateRoute';
 export default function App() {
   return (
    <BrowserRouter>
@@ -28,9 +30,9 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/search' element={<Search />} />
-        {/* <Route element={<PrivateRoute />}>
+        <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
-        </Route> */}
+        </Route>
         {/* <Route el ement={<OnlyAdminPrivateRoute />}>
           <Route path='/create-post' element={<CreatePost />} />
           <Route path='/update-post/:postId' element={<UpdatePost />} />
