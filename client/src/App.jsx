@@ -19,6 +19,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import FAQs from './pages/FAQs';
 import Dashboard from './pages/Dashboard';
 import PrivateRoute from './components/PrivateRoute';
+import OnlyAdminPrivateRoute from './components/OnlyAdminPrivateRoute';
+import CreatePost from './pages/CreatePost';
 export default function App() {
   return (
    <BrowserRouter>
@@ -33,10 +35,10 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>
-        {/* <Route el ement={<OnlyAdminPrivateRoute />}>
+        <Route el ement={<OnlyAdminPrivateRoute/>}>
           <Route path='/create-post' element={<CreatePost />} />
-          <Route path='/update-post/:postId' element={<UpdatePost />} />
-        </Route> */}
+          {/* <Route path='/update-post/:postId' element={<UpdatePost />} /> */}
+        </Route>
 
         <Route path='/projects' element={<Projects />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
