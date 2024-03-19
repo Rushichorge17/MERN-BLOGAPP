@@ -69,6 +69,7 @@ export default function CreatePost() {
         (error) => {
           setImageUploadError('Image upload failed');
           setImageUploadProgress(null);
+          console.error("An error occurred:", error);
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
