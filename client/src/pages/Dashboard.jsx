@@ -1,10 +1,14 @@
-import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import DashProfile from '../components/DashProfile';
+import DashPosts from '../components/DashPosts';
+import DashUsers from '../components/DashUsers';
+import DashComments from '../components/DashComments';
+import DashboardComp from '../components/DashboardComp';
 import DashSidebar from '../components/DashSideBar';
 
-
-const Dashboard = () => {
+export default function Dashboard() {
   const location = useLocation();
   const [tab, setTab] = useState('');
   useEffect(() => {
@@ -13,7 +17,6 @@ const Dashboard = () => {
     if (tabFromUrl) {
       setTab(tabFromUrl);
     }
-    // console.log(tabFromUrl);
   }, [location.search]);
   return (
     <div className='min-h-screen flex flex-col md:flex-row'>
@@ -23,9 +26,14 @@ const Dashboard = () => {
       </div>
       {/* profile... */}
       {tab === 'profile' && <DashProfile />}
-        </div>
-
-  )
+      {/* posts... */}
+      {tab === 'posts' && <DashPosts />}
+      {/* users */}
+      {tab === 'users' && <DashUsers />}
+      {/* comments  */}
+      {tab === 'comments' && <DashComments />}
+      {/* dashboard comp */}
+      {tab === 'dash' && <DashboardComp />}
+    </div>
+  );
 }
-
-export default Dashboard
