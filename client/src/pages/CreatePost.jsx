@@ -121,6 +121,12 @@ export default function CreatePost() {
             <option key="css" value="css">
               CSS
             </option>
+            <option key=" Bootstrap" value=" Bootstrap">
+              Bootstrap
+            </option>
+            <option key="Tailwind" value="Tailwind">
+              Tailwind
+            </option>
             <option key="nodejs" value="nodejs">
               Node.js
             </option>
