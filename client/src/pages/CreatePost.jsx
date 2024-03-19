@@ -103,27 +103,69 @@ export default function CreatePost() {
               setFormData({ ...formData, category: e.target.value })
             }
           >
-            <option value="uncategorized">Select a category</option>
-            <option value="javascript">JavaScript</option>
-            <option value="reactjs">React.js</option>
-            <option value="nextjs">Next.js</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="nodejs">Node.js</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            <option value="cpp">C++</option>
-            <option value="csharp">C#</option>
-            <option value="php">PHP</option>
-            <option value="swift">Swift</option>
-            <option value="ruby">Ruby</option>
-            <option value="typescript">TypeScript</option>
-            <option value="go">Go</option>
-            <option value="kotlin">Kotlin</option>
-            <option value="rust">Rust</option>
-            <option value="scala">Scala</option>
-            <option value="dart">Dart</option>
-            <option value="shell">Shell</option>
+            <option key="uncategorized" value="uncategorized">
+              Select a category
+            </option>
+            <option key="javascript" value="javascript">
+              JavaScript
+            </option>
+            <option key="reactjs" value="reactjs">
+              React.js
+            </option>
+            <option key="nextjs" value="nextjs">
+              Next.js
+            </option>
+            <option key="html" value="html">
+              HTML
+            </option>
+            <option key="css" value="css">
+              CSS
+            </option>
+            <option key="nodejs" value="nodejs">
+              Node.js
+            </option>
+            <option key="python" value="python">
+              Python
+            </option>
+            <option key="java" value="java">
+              Java
+            </option>
+            <option key="cpp" value="cpp">
+              C++
+            </option>
+            <option key="csharp" value="csharp">
+              C#
+            </option>
+            <option key="php" value="php">
+              PHP
+            </option>
+            <option key="swift" value="swift">
+              Swift
+            </option>
+            <option key="ruby" value="ruby">
+              Ruby
+            </option>
+            <option key="typescript" value="typescript">
+              TypeScript
+            </option>
+            <option key="go" value="go">
+              Go
+            </option>
+            <option key="kotlin" value="kotlin">
+              Kotlin
+            </option>
+            <option key="rust" value="rust">
+              Rust
+            </option>
+            <option key="scala" value="scala">
+              Scala
+            </option>
+            <option key="dart" value="dart">
+              Dart
+            </option>
+            <option key="shell" value="shell">
+              Shell
+            </option>
           </Select>
         </div>
         <div className="flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3">
