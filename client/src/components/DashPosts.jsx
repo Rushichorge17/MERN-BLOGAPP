@@ -74,7 +74,7 @@ export default function DashPosts() {
 
   return (
     <div className='p-3 max-w-3xl mx-auto min-h-screen'>
-      <h1 className='text-center text-3xl my-7 font-semibold'>Your Posts📜</h1>
+      <h1 className='text-center text-3xl my-7 font-semibold '>Your Posts📜</h1>
       <div className='table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500'>
         {currentUser.isAdmin && userPosts.length > 0 ? (
           <>
