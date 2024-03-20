@@ -12,7 +12,7 @@ import SignUp from './pages/SignUp';
 // import CreatePost from './pages/CreatePost';
  import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
-// import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
 import TermsAndConditions from './pages/Terms & Conditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -24,7 +24,7 @@ import CreatePost from './pages/CreatePost';
 export default function App() {
   return (
    <BrowserRouter>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />       
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
