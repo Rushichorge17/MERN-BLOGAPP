@@ -59,6 +59,7 @@ export default function Comment({ comment, onLike }) {
                     ' ' +
                     (comment.numberOfLikes === 1 ? 'like' : 'likes')}
               </p>
+
         </div>
       </div>
     </div>
